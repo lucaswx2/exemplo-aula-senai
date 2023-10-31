@@ -12,7 +12,7 @@ function App() {
   const [nomeTarefa, setNomeTarefa] = useState<string>('')
 
   const salvaTarefa = useCallback(() => {
-    setTarefas(value => [...tarefas,
+    setTarefas(value => [...value,
     {
       name: nomeTarefa,
       id: Math.random() * 100
